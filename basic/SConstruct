@@ -1,0 +1,3 @@
+Program(target='read_show_image',
+	source=['read_show_image.cpp'],
+	LIBS=['cv', 'highgui'])
