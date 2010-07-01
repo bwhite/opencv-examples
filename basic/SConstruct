@@ -1,3 +1,9 @@
-Program(target='read_show_image',
-	source=['read_show_image.cpp'],
-	LIBS=['cv', 'highgui'])
+Program(target='read_show_image_cpp',
+	source=['read_show_image_cpp.cpp'],
+	LIBS=['cv', 'highgui'],
+	CCFLAGS='-O3 -Wall')
+
+Program(target='read_show_image_c',
+	source=['read_show_image_c.c'],
+	LIBS=['cv', 'highgui'],
+	CFLAGS='-O3 -Wall')
